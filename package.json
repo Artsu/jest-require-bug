@@ -1,0 +1,27 @@
+{
+  "name": "jest-require-bug",
+  "version": "0.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "jest-cli": "0.2.2",
+    "lodash": "^3.1.0",
+    "react": "0.12.2",
+    "react-tools": "^0.12.2",
+    "underscore": "^1.7.0"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/preprocessor.js",
+    "unmockedModulePathPatterns": [
+      "react"
+    ],
+    "testPathDirs": [
+      "<rootDir>/client/scripts"
+    ]
+  }
+}
